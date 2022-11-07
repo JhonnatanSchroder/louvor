@@ -14,10 +14,13 @@ class HomeController extends Controller {
             $_SESSION['flash'] = '';
         }
 
+        $ministros = Louvorhandler::getAllMinistros();
+
         $bandas = Louvorhandler::getBandas();
         $this->render('home', [
             'flash' => $flash,
-            'bandas' => $bandas
+            'bandas' => $bandas,
+            'ministros' => $ministros
         ]);
     }
 

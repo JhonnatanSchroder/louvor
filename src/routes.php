@@ -16,4 +16,4 @@ $router->get('/editar/banda/{id}', "BandaController@editarBanda");
 $router->get('/gerador/escala', "HomeController@geradorEscala");
 $router->post('/gerador/escala', "HomeController@geradorEscalaPost");
 
-$router->post('/delete/banda/{id}', "BandaController@deleteBanda");
+$router->get('/delete/banda/{id}', "BandaController@deleteBanda");

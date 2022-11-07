@@ -31,6 +31,11 @@ class LouvorHandler {
 		return $ministros;
 	}
 
+	public static function getAllMinistros() {
+		$ministros = Ministros::select()->execute();
+		return $ministros;
+	}
+
 	public static function getDays($y, $m, $day) {
 
 		return new \DatePeriod(
